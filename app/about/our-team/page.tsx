@@ -1,0 +1,7 @@
+import Link from "next/link";
+import { Arrow, PageFrame } from "../../components/site-chrome";
+import { QuotePanel } from "../../components/marketing";
+
+export default function OurTeamPage() {
+  return <PageFrame><main><section className="interior-hero"><div className="shell interior-hero-grid"><div><p className="eyebrow">Our team</p><h1>People who take your <em>home seriously.</em></h1><p className="interior-lede">Every Northline technician is background-checked, factory-trained, and expected to leave your home better than they found it.</p><div className="hero-actions"><Link className="button button-orange button-large" href="/contact">Talk with our team <Arrow /></Link></div></div><div className="team-card"><div className="team-card-mark">N</div><strong>Prepared for the call.</strong><p>Stocked trucks, clean uniforms, and a plan before we knock.</p></div></div></section><section className="section"><div className="shell values-grid"><div><p className="eyebrow">Our standard</p><h2>Trust is built in the <em>small details.</em></h2></div><div className="value-list"><div><strong>Background checks</strong><p>We take seriously who enters your home.</p></div><div><strong>Continuous training</strong><p>Our team stays current on modern systems and equipment.</p></div><div><strong>Respect for your space</strong><p>Drop cloths, shoe covers, and a clean work area every time.</p></div></div></div></section><QuotePanel /></main></PageFrame>;
+}
